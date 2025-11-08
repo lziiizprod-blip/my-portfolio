@@ -20,7 +20,7 @@ export class Photos {
     {
       name: 'Event Photography',
       description: 'Immortalizing events, concerts, and emotions.',
-      image: 'assets/images/public/aa.jpg',
+      image: 'assets/images/public/aml.jpg',
       route: '/photos/events'
     },
     {
