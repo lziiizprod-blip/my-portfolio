@@ -1,1 +1,14 @@
-<p>videos works!</p>
+<section class="videos">
+  <h2>Videography</h2>
+  <p>Explore my videography styles through cinematic, reels, and clips.</p>
+
+  <div class="categories">
+    <div *ngFor="let c of categories" class="card">
+      <img [src]="c.image" [alt]="c.name" />
+      <div class="info">
+        <h3>{{ c.name }}</h3>
+        <p>{{ c.description }}</p>
+      </div>
+    </div>
+  </div>
+</section>

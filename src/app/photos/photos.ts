@@ -5,14 +5,26 @@ import { CommonModule } from '@angular/common';
   selector: 'app-photos',
   standalone: true,
   imports: [CommonModule],
-  template: `
-    <h1>Galerie Photos</h1>
-    <div class="grid">
-      <div class="card" *ngFor="let n of [1,2,3,4,5,6]">
-        <img src="https://picsum.photos/seed/{{n}}/800/600" alt="Photo {{n}}">
-        <div class="caption">Photo {{n}}</div>
-      </div>
-    </div>
-  `
+  templateUrl: './photos.html',
+  styleUrls: ['./photos.scss']
 })
-export class Photos {}
+export class Photos {
+  categories = [
+    {
+      name: 'Street Photography',
+      description: 'Capturing real life moments from the streets.',
+      image: 'assets/images/public/1.jpg'
+    },
+    {
+      name: 'Event Photography',
+      description: 'Immortalizing events, concerts, and emotions.',
+      image: 'assets/images/public/aa.jpg'
+    },
+    {
+      name: 'Portrait Photography',
+      description: 'Expressing people through portraiture.',
+      image: 'assets/images/public/aml.jpg'
+    }
+  ];
+}
+

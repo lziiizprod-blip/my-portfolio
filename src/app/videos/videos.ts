@@ -1,19 +1,29 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-videos',
   standalone: true,
-  template: `
-    <h1>Vidéos</h1>
-    <div class="grid">
-      <div class="card">
-        <iframe width="100%" height="220"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="Video demo" frameborder="0"
-          allowfullscreen></iframe>
-        <div class="caption">Vidéo démo</div>
-      </div>
-    </div>
-  `
+  imports: [CommonModule],
+  templateUrl: './videos.html',
+  styleUrls: ['./videos.scss']
 })
-export class Videos {}
+export class Videos {
+  categories = [
+    {
+      name: 'Cinematic',
+      description: 'Beautifully shot cinematic projects with storytelling and emotion.',
+      image: 'assets/images/public/azd.png'
+    },
+    {
+      name: 'Reel',
+      description: 'Dynamic short reels perfect for social media and quick storytelling.',
+     image: 'assets/images/public/aml.jpg'
+    },
+    {
+      name: 'Clip Video',
+      description: 'Music and promotional clips that captivate your audience.',
+      image: 'assets/images/public/1717.png'
+    }
+  ];
+}

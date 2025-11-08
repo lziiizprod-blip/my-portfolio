@@ -9,4 +9,4 @@ import { NavbarComponent } from './shared/navbar';
   templateUrl: './app.html',
   styleUrls: ['./app.scss'],
 })
-export class App {}  // <-- IMPORTANT: le nom est App (pas AppComponent)
+export class App {}

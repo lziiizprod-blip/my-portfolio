@@ -1,1 +1,12 @@
-<p>photos works!</p>
+<section class="gallery">
+  <h1>Photography</h1>
+  <p>Explore my photography work through three styles.</p>
+
+  <div class="cards">
+    <div class="card" *ngFor="let category of categories">
+      <img [src]="category.image" [alt]="category.name">
+      <h2>{{ category.name }}</h2>
+      <p>{{ category.description }}</p>
+    </div>
+  </div>
+</section>
