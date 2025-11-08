@@ -7,6 +7,8 @@ import { NavbarComponent } from './shared/navbar';
   standalone: true,
   imports: [RouterOutlet, NavbarComponent],
   templateUrl: './app.html',
-  styleUrls: ['./app.scss'],
+  styleUrls: ['./app.scss']
 })
-export class App {}
+export class AppComponent {
+  title = 'my-portfolio';
+}

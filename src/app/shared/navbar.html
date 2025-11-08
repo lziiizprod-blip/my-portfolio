@@ -1,9 +1,21 @@
 <header class="navbar">
-  <div class="logo">Lziiiz Photography</div>
-  <nav>
-    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-    <a routerLink="/photos" routerLinkActive="active">Photography</a>
-    <a routerLink="/videos" routerLinkActive="active">Videography</a>
-    <a routerLink="/contact" routerLinkActive="active">Contact</a>
-  </nav>
+  <div class="nav-container">
+    <div class="logo">
+      <span class="logo-text">LZIIIZ</span>
+      <span class="logo-subtitle">PHOTOGRAPHY</span>
+    </div>
+    
+    <nav class="nav-menu">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">HOME</a>
+      <a routerLink="/photos" routerLinkActive="active" class="nav-link">PHOTOGRAPHY</a>
+      <a routerLink="/videos" routerLinkActive="active" class="nav-link">VIDEOGRAPHY</a>
+      <a routerLink="/contact" routerLinkActive="active" class="nav-link">CONTACT</a>
+    </nav>
+
+    <div class="nav-social">
+      <a href="#" class="social-link">IG</a>
+      <a href="#" class="social-link">YT</a>
+      <a href="#" class="social-link">IN</a>
+    </div>
+  </div>
 </header>
