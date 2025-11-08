@@ -1,0 +1,11 @@
+<div class="pfe-gallery">
+  <h1>PFE Gallery</h1>
+  <p>My academic projects and final year work</p>
+  
+  <div class="photos-grid">
+    <div class="photo-item" *ngFor="let photo of pfePhotos">
+      <img [src]="photo.image" [alt]="photo.title">
+      <div class="photo-title">{{ photo.title }}</div>
+    </div>
+  </div>
+</div>

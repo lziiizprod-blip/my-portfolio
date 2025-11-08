@@ -41,6 +41,8 @@
     transition: all 0.3s ease;
     position: relative;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
 
     &:hover {
       transform: translateY(-10px);
@@ -49,6 +51,11 @@
 
       img {
         transform: scale(1.1);
+      }
+
+      .view-more {
+        color: #fff;
+        background: rgba(161, 110, 255, 0.1);
       }
     }
 
@@ -72,8 +79,22 @@
       color: #ccc;
       font-size: 1rem;
       line-height: 1.6;
-      margin: 0 1.5rem 1.5rem;
+      margin: 0 1.5rem 1rem;
       padding: 0;
+      flex-grow: 1;
+    }
+
+    .view-more {
+      color: #a16eff;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      transition: all 0.3s ease;
+      margin-top: auto;
     }
   }
 }

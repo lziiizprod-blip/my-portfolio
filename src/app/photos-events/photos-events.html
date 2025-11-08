@@ -1,0 +1,11 @@
+<div class="events-gallery">
+  <h1>Event Photography</h1>
+  <p>Immortalizing events, concerts, and emotions.</p>
+  
+  <div class="photos-grid">
+    <div class="photo-item" *ngFor="let photo of eventPhotos">
+      <img [src]="photo.image" [alt]="photo.title">
+      <div class="photo-title">{{ photo.title }}</div>
+    </div>
+  </div>
+</div>

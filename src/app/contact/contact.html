@@ -1,10 +1,49 @@
-<h1>Contact</h1>
-<p>Écrivez-moi à <a href="mailto:contact@lziiiz.com">contact@lziiiz.com</a></p>
-<p>Instagram : <a href="https://instagram.com/" target="_blank" rel="noopener">@lziiiz.photo</a></p>
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1>Get In Touch</h1>
+      <p>Let's create something amazing together. Reach out for collaborations, projects, or just to say hello.</p>
+    </div>
 
-<form class="contact-form" (submit)="$event.preventDefault()">
-  <input type="text" placeholder="Votre nom" required>
-  <input type="email" placeholder="Votre email" required>
-  <textarea rows="5" placeholder="Votre message" required></textarea>
-  <button type="submit">Envoyer</button>
-</form>
+    <div class="contact-content">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">📧</div>
+          <div class="info-text">
+            <h3>Email</h3>
+            <a href="mailto:lziiizprod@gmail.com">lziiizprod@gmail.com</a>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-icon">📱</div>
+          <div class="info-text">
+            <h3>Instagram</h3>
+            <a href="https://www.instagram.com/l3ziiizprod" target="_blank" rel="noopener">@l3ziiizprod</a>
+          </div>
+        </div>
+        
+        <div class="info-item">
+          <div class="info-icon">📍</div>
+          <div class="info-text">
+            <h3>Based In</h3>
+            <p>TUNISIA</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" (submit)="$event.preventDefault()">
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
